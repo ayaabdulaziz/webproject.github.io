@@ -1,0 +1,475 @@
+
+/* global rules */
+*
+{
+    box-sizing: border-box;
+}
+.container
+{
+    width: 1200px;
+    margin:  auto;
+}
+.clearfix
+{
+    clear: both;
+}
+.border
+{
+    width: 80%;
+    background-color: rgb(214, 214, 214)
+}
+body
+{
+    height: 2000px;
+}
+.heading-border:after
+{
+
+}
+/* global rules */
+
+/* start navbar */
+.navbar{
+  height: 0;
+  position: relative;
+  z-index: 3;
+}
+.navbar .brand
+{
+    float: left;
+    width: 40%;
+    padding-top: 25px;
+    color: #fff;
+}
+.navbar ul{
+    float: left;
+    list-style-type: none;
+    width: 60%;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.navbar ul li
+{
+    display: inline-block;
+    padding: 10px 25px;
+}
+.hvr-underline-from-left:before
+{
+   background-color:rgb(48, 178, 150) !important
+}
+.navbar ul li:hover a{
+    color: rgb(48, 178, 150)
+}
+.navbar ul li.active a{
+    color: rgb(48, 178, 150);
+}
+
+/* end navbar */
+
+
+/* start header */
+.header
+{
+    background: url('images/slider1.jpeg');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay
+{
+    background-color:rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.header .bx-wrapper
+{
+    background: none;
+    border: 0;
+    box-shadow: none;
+    text-align: center;
+    color: #fff;
+    height: 100% !important
+}
+.header .bx-wrapper .bx-viewport
+{
+    height: 100% !important
+}
+.slider li h2
+{
+font-size: 45px;
+padding-top: 0;
+margin-top: 0;
+text-transform: uppercase
+}
+.slider li h2 span{
+    color: rgb(25, 187, 154)
+}
+.slider li p{
+    font-weight: lighter;
+}
+.header button
+{
+   position: absolute;
+   top: 90%;
+   left: 45%;
+   color: #fff;
+   padding: 10px 20px;
+   background: none;
+   border: 1px solid #fff;
+   cursor: pointer;
+}
+/*  end header */
+
+/* start about  */
+.about
+{
+    margin: 50px 0 50px 0;
+}
+.about h2{
+    margin-bottom:  60px ;
+}
+.about h2 span{
+    border-bottom: 2px solid #000;
+}
+.about .item
+{
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.about i{
+    float: left;
+    width: 20%;
+    color: rgb(25, 187, 154);
+    margin-top: 15px;
+}
+
+.about .details
+{
+    float: left;
+    width: 80%;
+}
+.about .details h3{
+    color: rgb(54, 54, 54)
+    
+}
+.about .details p{
+    color: rgb(160, 160, 160)
+}
+/* end about */
+
+/* start our team */
+.our-team
+{
+    margin: 40px 0 30px 0; 
+}
+.our-team h2 span{
+border-bottom: 2px solid #000;
+}
+.our-team .box{
+    float: left;
+    position: relative;
+}
+.our-team .box:first-child{
+    width: 35%;
+}
+.our-team .box:not(:first-child) 
+{
+   width: 15.25%;
+   margin-left: 1%;
+   overflow: hidden;
+
+}
+.our-team .box p
+{
+    color: rgb(160, 160, 160)
+}
+.our-team .box:not(:first-child) img
+{
+width: 100%;
+}
+.our-team .box .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 98%;
+    line-height: 183px;
+    background-color:rgba(25, 187, 154,.5);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    transition: all 5s ease-in-out;
+    display: none;
+    cursor: pointer;
+}
+.our-team .box:not(:first-child):hover .overlay
+{
+    display: block;
+}
+/* end our team */
+
+
+
+/* start our client */
+
+.our-client
+{
+    background-image: url('images/slider.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    position: relative;
+    text-align: center;
+    color: #fff
+}
+.our-client .overlay
+{
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 2;
+}
+.our-client .info
+{
+    padding: 60px 0 40px 0;
+    z-index: 10;
+    position: relative;
+}
+.our-client  h2 span{
+border-bottom: 2px solid #fff;
+}
+.our-client  h2 
+{
+display:block;
+padding-top: 60px;
+z-index: 8;
+position: relative;
+}
+
+.our-client  q::before,.our-client  q::after{
+    color: rgb(27, 188, 155);
+    font-size: 25px;
+
+} 
+.our-client  q{
+    color: #e2dede;   
+}
+.our-client  p{
+    color: rgb(27, 188, 155); 
+    padding: 40px 0 40px 0 ;  
+    font-size: 20px;
+    font-weight: bold;
+}
+.our-client .info > div{
+    display: none;
+}
+.our-client .info .active{
+    display: block;
+}
+/* start our client */
+
+
+/*  start our projects */
+.our-projects
+{
+    margin: 60px 0 60px 0;
+    height: 600px;
+}
+.our-projects h2{padding-left: 50px;padding-bottom: 30px}
+.our-projects h2 span
+{
+    border-bottom: 2px solid #000;
+}
+.our-projects ul{
+    list-style-type: none;
+}
+.our-projects ul li
+{
+    display: inline-block;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: rgb(109, 108, 108);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.our-projects ul li.active
+{
+    background-color: rgb(27, 188, 155);
+    color: #fff;
+}
+.our-projects .gallary
+{
+    margin-top: 50px;
+}
+.our-projects .row >div
+{
+    float: left;
+     width: 30.33333%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.our-projects .row > div:nth-child(2)
+{
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+.our-projects .row > div img{   
+    width: 100%;
+}
+.our-projects .row > div .overlay
+{
+    background-color: rgba(27, 188, 155,.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+   
+    cursor: pointer;
+    display: none;
+}
+.our-projects .row > div .overlay p{
+    border: 1px solid #fff;
+   width: 30%;
+   padding: 10px;
+   text-align:center;
+   margin: 80px auto;
+}
+.our-projects .row > div .overlay i{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}   
+.our-projects .row > div:hover .overlay
+{
+    display: block;
+}                      
+/* end our projects */
+
+
+
+
+
+/* start footer */
+
+.footer
+{
+    background-color: rgb(35, 35, 35);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 500px;
+    color: #fff
+}
+.footer .col
+{
+  float: left;
+margin-left: 10px;
+}
+.footer .col:first-child
+{
+ width: 25%;
+}
+.footer .col:nth-child(2)
+{
+ width: 27%;
+}
+.footer .col:nth-child(3)
+{
+ width: 23%;
+}
+.footer .col:last-child
+{
+ width: 20%;
+}
+
+
+
+
+
+
+
+
+.footer .col .icons
+{
+    margin-top: 30px;
+}
+.footer .col .icons i{
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-left: 5px;
+}
+.footer .col h2{
+    text-transform: capitalize;
+}
+.footer .col button{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+.footer .col div{padding-bottom: 5px;}
+.footer .col div img
+{
+    float: left;
+    margin-right: 5%;
+}
+.footer .col h4{
+    text-transform: capitalize;
+    padding-bottom: 0;
+} 
+.footer .col span
+{
+    color: rgb(133, 133, 133);
+   
+}
+.footer .col .under
+{
+    border-color: #827575;
+}
+
+.finish
+{
+    text-align: center;
+    display: block;
+    margin-top: 70px;
+}
+.finish i{
+    color: red;
+}
+/* end  footer */
+
+
+
+
+
+
+
+
+
+
